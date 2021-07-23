@@ -291,6 +291,8 @@
     font-size: 18px;
     margin-top: 20px;
     letter-spacing: 1.0px;
+    color: black;
+    text-decoration: underline;
 }
 
 .navigation__first, .navigation__second {
