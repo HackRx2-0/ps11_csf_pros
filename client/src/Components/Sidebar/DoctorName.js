@@ -1,6 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setChannelInfo } from '../../features/appSlice'
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+
+import "./DoctorName.css"
 
 const DoctorName = ({ id, docName, specialization }) => {
 
@@ -13,7 +16,9 @@ const DoctorName = ({ id, docName, specialization }) => {
         }))} >
 
             <h4><span className='sidebarChannel__hash'>@</span>{docName} ({specialization})</h4>
-            <div />
+            <div style={{ color: "green" }}>
+                <FiberManualRecordIcon />
+            </div>
 
         </div>
     )

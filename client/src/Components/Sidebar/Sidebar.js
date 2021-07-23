@@ -67,10 +67,10 @@ const CommSidebar = () => {
                     </div>
                 </div>
                 <div className="sidebar__channelsList">
-                    <DoctorName id="1" docName="Mr. Verma" specialization="Dentistry" />
-                    <DoctorName id="2" docName="Ms. Verma" specialization="ENT" />
-                    <DoctorName id="3" docName="Mr. Sharma" specialization="Orthology" />
-                    <DoctorName id="4" docName="Mrs. Verma" specialization="Pediatrics" />
+                    <DoctorName id="1" docName="Dr. Verma" specialization="Dentistry" />
+                    <DoctorName id="2" docName="Dr. Srivastava" specialization="ENT" />
+                    <DoctorName id="3" docName="Dr. Sharma" specialization="Orthology" />
+                    <DoctorName id="4" docName="Dr. Verma" specialization="Pediatrics" />
                 </div>
             </div>
 
