@@ -334,3 +334,15 @@
 .symptomChecker {
     display: flex;
 }
+
+.symptom__sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #363A3F;
+    height: 100vw;
+}
+
+.symptomCheck__image {
+    width: 100%;
+    margin-top: 50px;
+}
