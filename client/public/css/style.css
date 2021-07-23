@@ -246,9 +246,17 @@
 }
 
 /* Dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #363A3F;
+}
+
 .dashboard__image {
     width: 48px;
     height: 48px;
     margin-right: 8px;
     border-radius: 99px;
+    cursor: pointer;
 }

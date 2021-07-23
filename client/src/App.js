@@ -1,6 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
-import Dashboard from "./Components/Dashboard/Dashboard";
 import Community from "./Pages/Community/Community";
 import Home from "./Pages/Home/Home";
 

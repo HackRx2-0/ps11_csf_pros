@@ -11,7 +11,10 @@ const DoctorName = ({ id, docName, specialization }) => {
             channelId: id,
             channelName: docName
         }))} >
+
             <h4><span className='sidebarChannel__hash'>@</span>{docName} ({specialization})</h4>
+            <div />
+
         </div>
     )
 }
