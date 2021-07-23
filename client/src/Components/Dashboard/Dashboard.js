@@ -9,7 +9,7 @@ function Dashboard() {
         <div className="dashboard">
             <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2019/12/02/03/26/snow-4666831_960_720.jpg" alt="" title="Homepage" onClick={() => history.push("/front")} />
 
-            <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2017/06/10/07/18/list-2389219_960_720.png" alt="" title="Symptom and Report Generator" />
+            <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2017/06/10/07/18/list-2389219_960_720.png" alt="" title="Symptom and Report Generator" onClick={() => history.push("/symptomChecker")} />
 
             <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2017/12/30/20/59/report-3050965_960_720.jpg" alt="" title="Fetch your Report" />
 
