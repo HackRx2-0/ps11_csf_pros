@@ -49,6 +49,17 @@ function AppointmentButtons({ name }) {
     const [startDate, setStartDate] = useState(new Date());
     const [openPay, setOpenPay] = useState(false);
 
+    const theme = useTheme();
+    const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const handleClickOpenPay = () => {
+        setOpenPay(true);
+    };
+
+    const handleClosePay = () => {
+        setOpenPay(false);
+    };
+
     const handleClickOpen = () => {
         setOpen(true);
     };
@@ -60,6 +71,11 @@ function AppointmentButtons({ name }) {
     const booked = () => {
         toast.info("You have booked your appointment. Please pay the fees for successfully booking the appointment")
         setOpen(false)
+    }
+
+    const paid = () => {
+        toast.info(`You have successfully booked the appointment with ${name}`)
+        setOpenPay(false)
     }
 
     const handleChange = (event) => {
@@ -80,7 +96,7 @@ function AppointmentButtons({ name }) {
                 <Button size="small" color="primary" onClick={handleClickOpen}>
                     Book Now
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" onClick={handleClickOpenPay}>
                     Pay Now
                 </Button>
             </CardActions>
@@ -129,8 +145,10 @@ function AppointmentButtons({ name }) {
                                 <em>Select</em>
                             </MenuItem>
                             <MenuItem value={10}>11:00 AM</MenuItem>
-                            <MenuItem value={20}>12:00 PM</MenuItem>
-                            <MenuItem value={30}>1:00 PM</MenuItem>
+                            <MenuItem value={10}>11:30 AM</MenuItem>
+                            <MenuItem value={10}>12:00 AM</MenuItem>
+                            <MenuItem value={20}>12:30 PM</MenuItem>
+                            <MenuItem value={30}>01:00 PM</MenuItem>
                         </Select>
                     </FormControl>
                 </DialogContent>
@@ -140,6 +158,28 @@ function AppointmentButtons({ name }) {
                     </Button>
                     <Button onClick={booked} color="primary">
                         Book an Appointment
+                    </Button>
+                </DialogActions>
+            </Dialog>
+
+            <Dialog
+                fullScreen={fullScreen}
+                open={openPay}
+                onClose={handleClosePay}
+                aria-labelledby="responsive-dialog-title"
+            >
+                <DialogTitle id="responsive-dialog-title">{`Pay Rs. 300 to ${name}`}</DialogTitle>
+                <DialogContent>
+                    <div className="appointmentButtons__pay">
+                        <p>Google Pay</p>
+                    </div>
+                </DialogContent>
+                <DialogActions>
+                    <Button autoFocus onClick={handleClosePay} color="primary">
+                        Disagree
+                    </Button>
+                    <Button onClick={paid} color="primary" autoFocus>
+                        Agree
                     </Button>
                 </DialogActions>
             </Dialog>

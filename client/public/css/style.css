@@ -307,3 +307,15 @@
 .appointments {
     width: 100%;
 }
+
+/* appointmentButtons.js */
+.appointmentButtons__pay {
+    text-align: center;
+    background-color: currentColor;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.appointmentButtons__pay > p {
+    color: white;
+}
