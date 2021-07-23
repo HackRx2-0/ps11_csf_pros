@@ -302,3 +302,8 @@
 .bookappointment {
     display: flex;
 }
+
+/* Appointments.js */
+.appointments {
+    width: 100%;
+}

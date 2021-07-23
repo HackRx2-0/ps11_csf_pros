@@ -13,7 +13,7 @@ function Dashboard() {
 
             <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2017/12/30/20/59/report-3050965_960_720.jpg" alt="" title="Fetch your Report" />
 
-            <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_960_720.jpg" alt="" title="Book an Appointment" />
+            <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_960_720.jpg" alt="" title="Book an Appointment" onClick={() => history.push("/bookappointment")} />
 
             <img className="dashboard__image" src="https://cdn.pixabay.com/photo/2016/12/05/19/43/pill-1884775_960_720.jpg" alt="" title="Your Prescriptions" />
 
