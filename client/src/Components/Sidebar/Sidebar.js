@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AddIcon from '@material-ui/icons/Add'
 import { Avatar } from '@material-ui/core'
 import SidebarChannel from './SidebarChannel'
 import DoctorName from './DoctorName'
+import { db } from "../../firebase"
+import { useEffect } from 'react'
 
 const Sidebar = () => {
 
+    const [channels, setChannels] = useState([])
+
+    useEffect(() => {
+        db.collection('channels').onSnapshot(snapshot => {
+            setChannels(snapshot.docs.map(doc => ({
+                id: doc.id,
+                channel: doc.data()
+            })))
+        })
+    }, [])
 
     const handleAddChannel = (e) => {
         e.preventDefault()
+
+        const channelName = prompt('Enter a new channel name')
+
+        if (channelName) {
+            db.collection('channels').add({
+                channelName: channelName
+            })
+
+        }
     }
 
     return (
@@ -26,10 +47,15 @@ const Sidebar = () => {
                     <AddIcon onClick={handleAddChannel} className='sidebar__addChannel' />
                 </div>
                 <div className="sidebar__channelsList">
-                    <SidebarChannel id="1" channelName="Dentistry" />
+                    {/* <SidebarChannel id="1" channelName="Dentistry" />
                     <SidebarChannel id="1" channelName="ENT" />
                     <SidebarChannel id="1" channelName="Orthology" />
-                    <SidebarChannel id="1" channelName="Pediatrics" />
+                    <SidebarChannel id="1" channelName="Pediatrics" /> */}
+                    {
+                        channels.map(({ id, channel }) => (
+                            <SidebarChannel key={id} id={id} channelName={channel.channelName} />
+                        ))
+                    }
                 </div>
             </div>
 
