@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function UpcomingAppointments() {
+function PastAppointments() {
 
     const classes = useStyles();
 
@@ -57,7 +57,7 @@ function UpcomingAppointments() {
 
     useEffect(() => {
         axios
-            .get("upcoming.json")
+            .get("past.json")
             .then((res) => {
                 setDoctors(res.data);
             })
@@ -75,7 +75,7 @@ function UpcomingAppointments() {
                         <div className={classes.heroContent}>
                             <Container maxWidth="sm">
                                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                                    Your Upcoming Appointments
+                                    Your Past Appointments
                                 </Typography>
 
                                 <div className={classes.heroButtons}>
@@ -127,4 +127,4 @@ function UpcomingAppointments() {
     )
 }
 
-export default UpcomingAppointments
+export default PastAppointments
