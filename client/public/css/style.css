@@ -319,3 +319,12 @@
 .appointmentButtons__pay > p {
     color: white;
 }
+
+/* upcomingAppointments.js */
+.upcomingAppointments {
+    display: flex;
+}
+
+.upcomingAppointments__main {
+    width: 100%;
+}

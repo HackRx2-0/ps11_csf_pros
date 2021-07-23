@@ -11,6 +11,7 @@ import Container from '@material-ui/core/Container';
 import { useEffect } from 'react';
 import axios from "axios";
 import AppointmentButtons from './AppointmentButtons';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     icon: {
@@ -50,6 +51,8 @@ export default function Appointments() {
 
     const [doctors, setDoctors] = useState([])
 
+    const history = useHistory();
+
     useEffect(() => {
         axios
             .get("doctors.json")
@@ -75,7 +78,7 @@ export default function Appointments() {
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justifyContent="center">
                                 <Grid item>
-                                    <Button variant="contained" color="primary">
+                                    <Button variant="contained" color="primary" onClick={() => history.push("/upcomingAppointments")}>
                                         Upcoming Appointments
                                     </Button>
                                 </Grid>

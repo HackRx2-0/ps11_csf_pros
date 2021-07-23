@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home";
 import { ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import UpcomingAppointments from "./Components/Appointments/UpcomingAppointments";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
           <Route exact path="/bookappointment">
             <BookAppointment />
+          </Route>
+
+          <Route exact path="/upcomingAppointments">
+            <UpcomingAppointments />
           </Route>
 
         </Switch>
