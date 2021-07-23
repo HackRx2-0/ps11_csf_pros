@@ -88,7 +88,7 @@ export default function Appointments() {
                                     </Button>
                                 </Grid>
                                 <Grid item>
-                                    <Button variant="outlined" color="primary">
+                                    <Button variant="outlined" color="primary" onClick={() => history.push("/pendingAppointments")}>
                                         Pending Appointments
                                     </Button>
                                 </Grid>

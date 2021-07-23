@@ -13,6 +13,7 @@ import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import PastButtons from './PastButtons';
 
 const useStyles = makeStyles((theme) => ({
     icon: {
@@ -114,6 +115,8 @@ function PastAppointments() {
                                                     Booked Time - <strong>11:00 AM</strong>
                                                 </Typography>
                                             </CardContent>
+
+                                            <PastButtons name={doctor.name} />
 
                                         </Card>
                                     </Grid>
