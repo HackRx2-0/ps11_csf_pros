@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -11,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useEffect } from 'react';
 import axios from "axios";
+import AppointmentButtons from './AppointmentButtons';
 
 const useStyles = makeStyles((theme) => ({
     icon: {
@@ -115,14 +115,9 @@ export default function Appointments() {
                                             Ratings - <strong>{doctor.ratings}</strong>
                                         </Typography>
                                     </CardContent>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            View
-                                        </Button>
-                                        <Button size="small" color="primary">
-                                            Edit
-                                        </Button>
-                                    </CardActions>
+                                    <AppointmentButtons
+                                        name={doctor.name}
+                                    />
                                 </Card>
                             </Grid>
                         ))}
