@@ -6,7 +6,7 @@ import DoctorName from './DoctorName'
 import { db } from "../../firebase"
 import { useEffect } from 'react'
 
-const Sidebar = () => {
+const CommSidebar = () => {
 
     const [channels, setChannels] = useState([])
 
@@ -33,7 +33,8 @@ const Sidebar = () => {
     }
 
     return (
-        <div className='sidebar' >
+        <div className='sidebar'>
+
             <div className="sidebar__top">
                 <h3>COMMUNITY</h3>
             </div>
@@ -67,9 +68,9 @@ const Sidebar = () => {
                 </div>
                 <div className="sidebar__channelsList">
                     <DoctorName id="1" docName="Mr. Verma" specialization="Dentistry" />
-                    <DoctorName id="1" docName="Mr. Verma" specialization="ENT" />
-                    <DoctorName id="1" docName="Mr. Verma" specialization="Orthology" />
-                    <DoctorName id="1" docName="Mr. Verma" specialization="Pediatrics" />
+                    <DoctorName id="2" docName="Ms. Verma" specialization="ENT" />
+                    <DoctorName id="3" docName="Mr. Sharma" specialization="Orthology" />
+                    <DoctorName id="4" docName="Mrs. Verma" specialization="Pediatrics" />
                 </div>
             </div>
 
@@ -83,4 +84,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar
+export default CommSidebar
