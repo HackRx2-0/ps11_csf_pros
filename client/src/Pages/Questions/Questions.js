@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 
 function Questions() {
 
     const history = useHistory()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+
     return (
         <div className="questions">
             <Dashboard />

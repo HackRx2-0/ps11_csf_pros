@@ -68,13 +68,6 @@ function NavigationPage() {
                         <h4><b>See Previously answered Common Questions</b></h4>
                     </div>
                 </div>
-
-                <div class="card" onClick={() => history.push("/questions")}>
-                    <img src="https://cdn.pixabay.com/photo/2015/10/30/12/24/questions-1014060_960_720.jpg" alt="Avatar" style={{ width: "300px", height: "300px" }} />
-                    <div class="container">
-                        <h4><b>Don't know about various specializations ?</b></h4>
-                    </div>
-                </div>
             </div>
         </div>
     )
