@@ -375,6 +375,9 @@
 
 .questions__main {
     display: flex;
+    /* align-items: center; */
+    margin: 0 auto;
+    height: 100vw;
 }
 
 .questionCold {
