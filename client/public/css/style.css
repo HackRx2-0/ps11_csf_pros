@@ -310,9 +310,13 @@
     text-decoration: underline;
 }
 
-.navigation__first, .navigation__second {
+.navigation__first, .navigation__second, .navigation__third {
     display: flex;
     margin-top: 25px;
+}
+.navigation__third {
+    text-align: center;
+    justify-content: center;
 }
 
 /* bookappointment.js */
@@ -362,4 +366,30 @@
 .symptomCheck__image {
     width: 100%;
     margin-top: 50px;
+}
+
+/* Questions.js */
+.questions {
+    display: flex;
+}
+
+.questions__main {
+    display: flex;
+}
+
+.questionCold {
+    display: flex;
+}
+
+.questionCold__main {
+    padding: 20px;
+    margin: 20px;
+}
+
+.questionCold__question {
+    margin-bottom: 40px;
+}
+
+.questionCold__question > p {
+    margin-top: 20px;
 }
