@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<h1 align="center">ONE TO DOC</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="./OneTo.jpg" /></p>
 
-## Available Scripts
+**One To Doc** is a **healthcare management application** in which users can enter into the application and
+**set appointments** with **healthcare experts** for advices and checkups.
+The application has its main utilities in a single dynamic page for ease of access. The application has a
+**symptom checker** and **report generation** mechanism where the user can **pre-empt his/her symptoms** and
+get a **report** generated on the same. The user can then use this report to **book an appointment** and
+get the appropriate care. This will help the doctors getting a better understanding of the users and
+helping them in a much more cohesive way, increasing speed and efficiency. The application also
+provides the utility of **getting prescriptions** and **payments in a single platform** where he/she can
+check both his/her previous and current prescriptions and can manage payments, thus creating a
+**fully independent self-health solution**.
+The application also has a feature where a user can get into a **community with other users** and
+**healthcare experts** for instant **appointments**, **chats**, and **payments**. This will help in creating a larger platform for **healthcare solutions** and **better response times**.
 
-In the project directory, you can run:
+### How is our Solution Different
 
-### `yarn start`
+Our application , apart from being a **fully independent application**, has an edge
+over other solutions in the following ways:-
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Creation of a **fully functional community** of people ready to help each other anytime.
+2. **Generation of reports** which can be used for getting further medical attention
+both within the application and beyond.
+3. **Generation of reports** and **pre-emption of symptoms** helps in generating a more
+clear picture in the mind of the expert and can help him in giving better advices to
+users.
+4. **Advanced Queue Management**
+5. **Review System for doctors**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Future possible enhancements
 
-### `yarn test`
+1. **Multi Language support** for ease of use for the users.
+2. **Creation of a mobile application** for the same to get better user coverage.
+3. Introduction of **Use-Reward system** for attracting more users
+towards the application.
+4. Fully converting the application into **MERN**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Risks/Challenges/Dependencies
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Data security** of the users and the experts is a challenge as we need to
+constantly evolve to handle more difficult threats such as **cross site scripting** and
+**forgery**.
+2. **Verification** of both experts and users is a must for protecting patient
+confidentiality.
