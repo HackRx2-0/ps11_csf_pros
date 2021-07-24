@@ -109,7 +109,7 @@ function PastAppointments() {
                                                     Specialization - <strong>{doctor.specialization}</strong>
                                                 </Typography>
                                                 <Typography>
-                                                    Booked Date - <strong>26th July 2021</strong>
+                                                    Booked Date - <strong>22th July 2021</strong>
                                                 </Typography>
                                                 <Typography>
                                                     Booked Time - <strong>11:00 AM</strong>
