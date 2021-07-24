@@ -36,6 +36,13 @@ function Questions() {
                         <h4><b>Acidity</b></h4>
                     </div>
                 </div>
+
+                <div class="card" style={{ height: "500px" }}>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/13/34/diagnostics-161140_960_720.png" alt="Avatar" style={{ width: "300px", height: "300px" }} />
+                    <div class="container">
+                        <h4><b>Which Doctors to see ?</b></h4>
+                    </div>
+                </div>
             </div>
         </div>
     )
