@@ -44,3 +44,18 @@ constantly evolve to handle more difficult threats such as **cross site scriptin
 **forgery**.
 2. **Verification** of both experts and users is a must for protecting patient
 confidentiality.
+
+### Designs and MockUps
+
+<p align="center"><img src="./symptom.jpeg" /></p>
+<p align="center"><img src="./fetch_reports.jpeg" /></p>
+<p align="center"><img src="./view_prescriptions.jpeg" /></p>
+<p align="center"><img src="./Payment_records.jpeg" /></p>
+<p align="center"><img src="./queue_management.jpeg" /></p>
+
+### Flowcharts
+
+<p align="center"><img src="./Flowchart1.jpg" /></p>
+<p align="center"><img src="./Flowchart2.jpg" /></p>
+<p align="center"><img src="./Flowchart3.jpg" /></p>
+<p align="center"><img src="./Flowchart4.jpg" /></p>
